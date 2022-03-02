@@ -1,0 +1,44 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+textarea{
+    font-family: Calibri;
+    font-size: 1.5em;
+    width: 75vw;
+    height: 50vh;
+    display: block;
+    margin: auto;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+button{
+    width: 120px;
+    height: 50px;
+    background: linear-gradient(120deg, yellow, aquamarine);
+    border-width: 2px;
+    border-color: darkslateblue;
+    border-radius: 10px;
+    color: darkslateblue;
+}
+.buttonBar{
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#save-text-file{
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.title{
+    text-align: center;
+    font-size: 2em;
+}
+.converter{
+    position: relative;
+}
