@@ -1,42 +1,47 @@
-*{
+body{
     font-family: 'Open Sans', sans-serif;
+    background: rgba(0, 0, 0, 0.93);
+    height: 100vh;
+
 }
 textarea{
+    resize: none;
+    outline: none;
+    background: rgba(0, 0, 0, 0.42);
+    color: white;
     font-family: Calibri;
     font-size: 1.5em;
-    width: 75vw;
-    height: 50vh;
+    width: 60vw;
+    height: 40vh;
     display: block;
     margin: auto;
     border-style: solid;
     border-color: black;
-    border-width: 2px;
+    border-width: 0px;
+    border-radius: 2vw;
+    padding: 60px;
+    -webkit-box-shadow: 11px 11px 44px 0px rgba(0, 20, 255, 1);
+    -moz-box-shadow: 11px 11px 44px 0px rgba(0, 20, 255, 1);
+    box-shadow: 11px 11px 44px 0px rgba(0, 20, 255, 1);
 }
 button{
     width: 120px;
     height: 50px;
-    background: linear-gradient(120deg, yellow, aquamarine);
     border-width: 2px;
-<<<<<<< HEAD
-    border-color: rgba(4, 79, 215, 0.66);
-    color: white;
-    background: #0028ff;
-=======
-    border-color: darkslateblue;
-    border-radius: 10px;
-    color: darkslateblue;
->>>>>>> parent of cd2eb99 (styled)
+    border-color: rgba(255, 255, 255, 0.28);
+    color: black;
+    background: aqua;
 }
-.buttonBar{
+.button-bar{
     position: absolute;
-    top: 110%;
+    top: 115%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 #save-text-file{
     position: absolute;
-    top: 120%;
+    top: 125%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -44,11 +49,84 @@ button{
 .title{
     text-align: center;
     font-size: 2em;
+    padding: 2vh 0px 5vh 0px;
+    color: white;
 }
 .converter{
     position: relative;
-<<<<<<< HEAD
 }
-=======
+.bn5 {
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
 }
->>>>>>> parent of cd2eb99 (styled)
+
+.bn5:before {
+    content: "";
+    background: linear-gradient(
+            45deg,
+            #ff0000,
+            #ff7300,
+            #fffb00,
+            #48ff00,
+            #00ffd5,
+            #002bff,
+            #7a00ff,
+            #ff00c8,
+            #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowingbn5 20s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+@keyframes glowingbn5 {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.bn5:active {
+    color: #000;
+}
+
+.bn5:active:after {
+    background: transparent;
+}
+
+.bn5:hover:before {
+    opacity: 1;
+}
+
+.bn5:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #191919;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
