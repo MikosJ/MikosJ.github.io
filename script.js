@@ -1,49 +1,48 @@
 document.getElementById("upper-case").addEventListener("click", function(){
-    let tresc = document.getElementById("text");
-    document.getElementById("text").value = tresc.value.toUpperCase();
+    let text = document.getElementById("text");
+    document.getElementById("text").value = text.value.toUpperCase();
 })
 
 document.getElementById("lower-case").addEventListener("click", function(){
-    let tresc = document.getElementById("text");
-    document.getElementById("text").value = tresc.value.toLowerCase();
+    let text = document.getElementById("text");
+    document.getElementById("text").value = text.value.toLowerCase();
 })
 
 document.getElementById("proper-case").addEventListener("click", function(){
 
-    let tresc = document.getElementById("text");
-    document.getElementById("text").value = tresc.value.toLowerCase();
+    let text = document.getElementById("text");
+    document.getElementById("text").value = text.value.toLowerCase();
 
-    let tablica = tresc.value.split(" ");
-    tresc.value = "";
+    let arr = text.value.split(" ");
+    text.value = "";
 
-    for (let i = 0; i < tablica.length; i++){
-        tablica[i] = tablica[i].charAt(0).toUpperCase() + tablica[i].slice(1);
-        tresc.value += tablica[i]+" ";
+    for (let i = 0; i < arr.length; i++){
+        arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
+        text.value += arr[i]+" ";
     }
-    tresc.value = tresc.value.trim()
-    document.getElementById("text").value = tresc.value;
+    text.value = text.value.trim()
+    document.getElementById("text").value = text.value;
 })
 
 document.getElementById("sentence-case").addEventListener("click", function(){
-    let tresc = document.getElementById("text");
-    document.getElementById("text").value = tresc.value.toLowerCase();
+    let text = document.getElementById("text");
+    document.getElementById("text").value = text.value.toLowerCase();
 
-    let tablica = tresc.value.split(". ");
-    tresc.value = "";
+    let arr = text.value.split(". ");
+    text.value = "";
 
-    for (let i = 0; i < tablica.length; i++){
-        tablica[i] = tablica[i].charAt(0).toUpperCase() + tablica[i].slice(1);
-        tresc.value += tablica[i]+". ";
+    for (let i = 0; i < arr.length; i++){
+        arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
+        text.value += arr[i]+". ";
     }
-    tresc.value = tresc.value.trim().substring(0,tresc.value.trim().length - 1);
-    console.log(tresc.value);
-    document.getElementById("text").value = tresc.value;
+    text.value = text.value.trim().substring(0,text.value.trim().length - 1);
+    document.getElementById("text").value = text.value;
 })
 
 document.getElementById("save-text-file").addEventListener("click", function(){
-    let tresc = document.getElementById("text");
+    let text = document.getElementById("text");
     let filename = "text.txt";
-    download(filename, tresc.value);
+    download(filename, text.value);
 
 })
 
