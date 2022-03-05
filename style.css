@@ -36,7 +36,7 @@ button{
 .button-bar{
     position: absolute;
     margin: auto;
-    top: 115%;
+    top: 80%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -46,7 +46,7 @@ button{
     position: absolute;
     margin: 20px 0px;
     padding: 10px;
-    top: 125%;
+    top: 90%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -59,6 +59,8 @@ button{
 }
 .converter{
     position: relative;
+    height: 80vh;
+    min-height: 680px;
 }
 .bn5 {
     padding: 0.6em 2em;
