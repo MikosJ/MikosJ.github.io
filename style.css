@@ -31,16 +31,21 @@ button{
     border-color: rgba(255, 255, 255, 0.28);
     color: black;
     background: aqua;
+    margin: 5px;
 }
 .button-bar{
     position: absolute;
+    margin: auto;
     top: 115%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    min-width: 540px;
 }
 #save-text-file{
     position: absolute;
+    margin: 20px 0px;
+    padding: 10px;
     top: 125%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
